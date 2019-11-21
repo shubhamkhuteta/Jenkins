@@ -1,0 +1,52 @@
+DevOps (Contains some of the SDLC Process) : 
+Continious Integration
+Continious Delivery
+Agile Integration
+
+CI : 
+Mantain Code Repo
+Automate the Build
+Selft test the build
+Regular Commit by each team member
+Build every commit
+Clone the Production and Test it
+Identify bugs at initial phase
+Notify the team mates
+
+DevOps Maturity Models : 
+1. Novice 
+2. Beginner
+3. Intermidiate
+4. Advanced
+5. Expert
+
+Function of DevOps : 
+1. Build
+2. Test + QA
+3. Source Code Mgmt
+4. Visibility (of Reports and Build Status)
+
+CI Using Jenkins : Cloudify -> Jenkins -> Polls Github Repo
+
+Jenkin Support : (Code -> Compile -> Test -> Build -> Push -> Pull -> Deploy -> Manage)
+Check Out Code 
+Compile
+Run Test Case
+Build Docker Images
+Push them to Docker Registry
+Pull new images from DR
+Deploy them
+Manage them
+
+CI Principles : 
+Mantain Single Repo | Auto Build | Self Test | Build Every Commit | Ensure the fast execution
+
+CD Principles : 
+Collaborative | Batch Oriented | Repetitive Tasks | Cont Improvement | Feedback loop
+
+CI/CD Pipeline : 
+Code->Commit->CI(Build->Testing(Comatability)->Integration) -> CD(Review->Staging->Production)
+
+Types of Triggers : 
+Periodic | Event Drivven | Poll Based | Post Project Build
+
