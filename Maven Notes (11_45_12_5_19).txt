@@ -1,0 +1,47 @@
+Maven Notes : 
+-------------
+Software Project Mgmt Tool -> Open Source -> Based on POM (Project Obj Model)
+
+*******************
+Process :
+*******************
+--------------Building | Test | Release | Reporting | SCM | Documentation | Distribution------------------------
+
+
+Plus Points : Simple | Fast | Dependency Mgmt | Multiple Projects | Large Library | 
+	      Extensible | Instant online config | Common Project Structure | Modular Design | Dependency Mgmt
+
+*******************
+Build Life Cycle  : 
+*******************
+------------------------------------(Clean)-------------------------------- -> (Clean) 
+----------(Validate | Compile | Test | Package | Verify)------------------- -> (Default)
+------------------------------(Install | Deploy)--------------------------- -> (Site)
+
+
+*******************
+Commands :
+*******************
+Package the Project -> mvn -package
+Generate an Architype -> mvn archetype:generate
+Current version of a plugin -> mvn -Dplugin=install help:describe (Dplugin :prefix of plugin)
+Current Version : mvn -version
+To see debug msg : Execute mvn with -x
+To see error/execution msg : -e
+Run a test in mvn : mvn -Dtest=TestCaseA test | for multiple we can put * or can seperate with ",".
+Skipping a test cpmpilation : -Dmaven.test.skip=true
+Skipping a test execution : -DskipTests=true 
+
+*******************
+Maven Plugin Use :
+*******************
+-> Cleaning the Code 
+-> Complie
+-> Creting JAR Files
+-> Deploying the artifacts
+-> Running the unit test
+-> Documenting the project
+-> Generating the site of the project
+-> Generating the WAR File
+-> Generate checksyyle report
+
