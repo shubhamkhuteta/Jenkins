@@ -1,0 +1,57 @@
+CI : 
+Dev(App Team) 
+-> Commits 
+-> SCM(Github(many branches), SVN, Subversion) 
+-> Build 
+-> Jenkins will pick the code(Github plugin/webhooks) 
+
+--------------------------------------------
+
+-> (Build) Maven Commands 
+Build :
+
+Clean install and Proceed to create an Artifact.
+
+Before it creates an artifact : 
+
+It will analyze the code and check for Code errors(Syntax error  or check style errors) and Caluculate the Sonar Code coverage.
+
+Upload code coverage results to Sonar Dashboard.
+
+Create an Artifact and upload artifact to Nexus.
+
+Code Meets Threshold values:
+
+*Code coverage : 80%
+*Test results : 95%
+*Major or Minor exception: 0
+----------------------------------------------
+
+-> Package/Artifact (TAR,WAR,EAR) 
+-> Nexus
+
+CD :
+Jenkins 
+-> Nexus 
+-> Rundeck 
+-> Environment (Chef and Ansible)
+
+-----------------------------------------------
+ 
+Our Team is reposbile only for creation and Modify Jenkins Pipeline. (RITM)
+
+Provide permissions to Jenkins Pileine (only for LDAP Groups and to EMail DL) 
+(RITM)
+
+
+For any trouleshooting i need SNOW INCIDENT: 
+
+We also troubleshoot Continous Integration Plan
+
+CD : We only conifgure Jenkins pipeline for CD 
+however troublshooting is taken care by SE(System Engg).
+(5% troubleshott like validate our Jenkins access to RUneck and 
+ensure Jenkins config pertaining to Rundeck is correct) 
+ 
+
+ 

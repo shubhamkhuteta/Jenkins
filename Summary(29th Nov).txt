@@ -1,0 +1,33 @@
+Full Process : 
+Continious Integration :
+
+-> Developers Commits the code to SCM (Github, SVN, Subversion)
+-> Jenkins will pull that code for build through maven commands.
+-> In between the build procedure It will clean the existing artifact cache.\
+-> Analyze the code 
+-> In Analyze the code : 
+-----> Syntaxt Error
+-----> Check Syyle Error
+After that calculate the sonar code coverage
+Sonar Code Coverage -> Code Coverage : 80%
+---------------------> Test Results : 95%
+---------------------> Major and Minor exception : 0
+
+-> After that upload it to the Nexus (Package/Artifact)
+
+
+Continious Delivery : 
+
+-> Jenkins request the code from Nexus with plugins
+-> Deploy it to the Rundeck (Chef(OS And Softwares) and Ansible(Configuration))
+
+
+Our Respon : 
+ -> Creating the jenkins Pipeline 
+-> Modifing
+-> Provide Permissions to groups
+-> Triuble shoot the CI Plan
+
+in CD : Configure the pipeline for CD
+-> TS like validate our jenkins access to Rundeck and 
+ensure Jenkin Config pertaining to rundeck is corrent or no

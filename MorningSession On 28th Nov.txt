@@ -1,0 +1,50 @@
+Developers -- Write/Save/Place/Commit/Check in --- to SCM/SCR(GIT HUB/SVN)
+
+Testing -- (Testing Tools --- Selenium / HP.
+
+Build Engg - Take code from SCM and they do BUILD / Create (artifact/Package)  -- Maven Tool - run Maven commands. and save the the same to Nexus
+
+Nexus (Artifact repository)
+
+***************************************
+
+Deploy Engg (Take the artfact from Nexus ad Deploy the artifact to respecive machines) Depo=lot - Rundeck.
+
+
+SCM : GITHUB
+
+ARM : Nexus
+Build : Maven
+Deploy : RUndeck 
+
+
+----------------------------------------------------------------------------
+
+
+Developer --- Commits ---- GUTHUB
+
+BUILD + Deploy (Jenkins)
+
+jenkins CI+CD
+_____________
+
+Artifact extn : JAR/ WAR/TAR/EAR
+
+DevOPs -= Jenkins (CI + CD)
+
+Jenkins = Talk to github and take that Source coe=de and call Maven (Use Maven commands) , you get artifact - URL  : Nexus(Take user name an password) o to that location and save the artifact) =  CI 
+
+Plugins = GITHUB Plugin/ Webhooks. 
+ 
+----------------------------------------------------------------------------
+
+
+WAR(Application)
+Jar(Library)
+EAR(Enterprize) 
+
+
+----------------------------------------------------------------------------
+
+
+Deploy  Engg = Download the Artifact nexus + Run RUndeck (Config managemn tools(Chef+Ansible) and i deplpoy these artifact there). = CD 
