@@ -1,0 +1,53 @@
+--> Restrict these server where to be:  This plugin allow us to run the build on slave server.
+
+--> Email notification : This plugin is used to send out the emails to recipient list.like to team members,developers etc.
+
+-->THERE ARE 4 WAYS TO TRIGGER THE BUILD IN JENKINS under build trigger plugin
+1.	Build manually
+2.	Trigger the build Remotely
+3.	Trigger the build periodically
+4.	Poll scm
+5.	Build pipeline (for upstream and downstream jobs)
+
+-->Build manually :      
+
+-->Trigger the build Remotely: 
+This option is enable you to trigger the build from other server by accessing special defriend URL.       
+
+-->Trigger the build periodically:   this allow the build to trigger according to scheduled time 
+like by using cron job (everyday at 8 am)or by using script. 
+
+-->POLL SCM: Poll scm will check for the changes before triggering the build ,
+if there are any  changes to the previous version then only build will be triggered
+
+-->Build after other projects are built: In this dependency jobs are going to be triggered like downstream ,upstream jobs.
+
+-->Upstaream and downstream: A job is dependent on the other job that is job A should be triggerd after completion of job B, 
+in this case job B is the upstream job and job A is downstream job.For this we need to use the plugin like POST BUILD ACTIONS ? BUILD OTHER PROJECTS
+
+--> Trigger parameterized build on other project: By using this plugins we can pass the job B (upstream) parameters to (downstream)  job A.
+SSH REMOTE HOSTS:
+Click on manage Jenkins   ?   configure system
+This plugin is used in devops jobs (automation jobs) to trigger the build in remote servers by using shell command. 
+For this we need to mention the following details
+Hostname:
+Port:
+Username:
+Passport/passphrase:
+Keyfile:
+
+DISCARD THE OLD BUILD :This option keeps the specified number of builds and deletes remaining builds.
+
+THIS BUILD IS PARAMETARISED: This plugin configure what parameters your build takes.
+
+EXECUTE THE CONCURRENT BUILDS IF NECESSARY: This will schedule and execute the concurrent builds if necessary.
+
+SOURCE CODE MANAGEMENT:  By using this plugin we can specify svn or cvs or git repository URL.
+
+BUILD ENVIRONMENT: in this pluggin we have options like 
+
+Add time stamp to console output
+
+Execute the shell script on remote host by using ssh
+
+Copy the files into the jobs workspace before building
